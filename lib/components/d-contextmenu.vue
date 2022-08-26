@@ -24,21 +24,22 @@
           <!-- 色彩调整 -->
           <ul class="d-player-filter-panel" v-show="state.dialogType == 'filter'">
             <li class="d-player-filter-panel-item">
-              <span>饱和度</span>
+              <span>
+bão hòa</span>
               <d-slider class="filter-panel-slider" size="5px" v-model="filter.saturate"></d-slider>
               <span>{{ Math.round(filter.saturate * 255) }}</span>
             </li>
             <li class="d-player-filter-panel-item">
-              <span>亮度</span>
+              <span>độ sáng</span>
               <d-slider class="filter-panel-slider" size="5px" v-model="filter.brightness"></d-slider>
               <span>{{ Math.round(filter.brightness * 255) }}</span>
             </li>
             <li class="d-player-filter-panel-item">
-              <span>对比度</span>
+              <span>Tương phản</span>
               <d-slider class="filter-panel-slider" size="5px" v-model="filter.contrast"></d-slider>
               <span>{{ Math.round(filter.contrast * 255) }}</span>
             </li>
-            <span @click="filterReset" title="重置" aria-label="重置" class="d-player-filter-reset">重置</span>
+            <span @click="filterReset" title="cài lại" aria-label="cài lại" class="d-player-filter-reset">cài lại</span>
           </ul>
         </div>
       </div>
